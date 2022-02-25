@@ -1,0 +1,201 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="cf7d6c01-309b-4545-8319-3d53b1e8bfd0/v1.3" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <alternateIdentifier>cf7d6c01-309b-4545-8319-3d53b1e8bfd0</alternateIdentifier>
+  <alternateIdentifier>https://bison.usgs.gov/ipt/resource?r=monarchwatch</alternateIdentifier>
+  <title xml:lang="eng">Monarch Watch</title>
+      <creator>
+    <individualName>
+        <givenName>Chip Orley R.</givenName>
+      <surName>Taylor, Jr.</surName>
+    </individualName>
+    <organizationName>Monarch Watch,  Kansas Biological Survey, University of Kansas</organizationName>
+    <positionName>Founder and Director; Professor</positionName>
+    <address>
+        <deliveryPoint>2021 Constant Ave</deliveryPoint>
+        <city>Lawrence</city>
+        <administrativeArea>Kansas</administrativeArea>
+        <postalCode>66047</postalCode>
+        <country>US</country>
+    </address>
+    <electronicMailAddress>chip@ku.edu</electronicMailAddress>
+    <onlineUrl>http://monarchwatch.org/</onlineUrl>
+      </creator>
+      <creator>
+    <individualName>
+        <givenName>Jim</givenName>
+      <surName>Lovett</surName>
+    </individualName>
+    <organizationName>Monarch Watch, University of Kansas</organizationName>
+    <positionName>Research Assistant</positionName>
+    <address>
+        <deliveryPoint>2021 Constant Avenue</deliveryPoint>
+        <city>Lawrence</city>
+        <administrativeArea>Kansas</administrativeArea>
+        <postalCode>66047</postalCode>
+        <country>US</country>
+    </address>
+    <electronicMailAddress>jlovett@ku.edu</electronicMailAddress>
+    <onlineUrl>http://monarchwatch.org/</onlineUrl>
+      </creator>
+      <metadataProvider>
+    <individualName>
+        <givenName>Elizabeth</givenName>
+      <surName>Sellers</surName>
+    </individualName>
+    <organizationName>United States Geological Survey (USGS)</organizationName>
+    <positionName>Technical Information Specialist - Biology</positionName>
+    <address>
+        <deliveryPoint>12201 Sunrise Valley Drive, Mailstop 302</deliveryPoint>
+        <city>Reston</city>
+        <administrativeArea>Virginia</administrativeArea>
+        <postalCode>20192</postalCode>
+        <country>US</country>
+    </address>
+    <phone>+1 (703) 648 4385</phone>
+    <electronicMailAddress>esellers@usgs.gov</electronicMailAddress>
+    <onlineUrl>https://profile.usgs.gov/esellers</onlineUrl>
+      </metadataProvider>
+  <pubDate>
+      2020-01-08
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+    <para>Monarch Watch is a nonprofit education, conservation, and research program based at the University of Kansas that focuses on the monarch butterfly, its habitat, and its spectacular fall migration. Monarch Watch strives to provide the public with information about the biology of monarch butterflies, their spectacular migration, and how to use monarchs to further science education in primary and secondary schools. We engage in research on monarch migration biology and monarch population dynamics to better understand how to conserve the monarch migration. We also promote protection of monarch habitats throughout North America.</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Metadata</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Monitoring</keyword>
+            <keyword>insects</keyword>
+            <keyword>lepidoptera</keyword>
+        <keywordThesaurus>USGS CSAS&amp;L Biocomplexity Thesaurus http://www.usgs.gov/core_science_systems/csas/biocomplexity_thesaurus/</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Observation</keyword>
+        <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+      </keywordSet>
+  <additionalInfo>
+    <para>In 1992, Taylor founded Monarch Watch, an outreach program focused on education, research and conservation relative to monarch butterflies. Since then, Monarch Watch has enlisted the help of volunteers to tag monarchs during the fall migration. This program has produced many new insights into the dynamics of the monarch migration. In 2005 Monarch Watch created the Monarch Waystation program, in recognition that habitats for monarchs are declining at a rate of 6,000 acres a day in the United States. The goal of this program is to inspire the public, schools and others to create habitats for monarch butterflies and to assist Monarch Watch in educating the public about the decline in resources for monarchs, pollinators and all wildlife that share the same habitats.</para>
+  </additionalInfo>
+  <intellectualRights>
+    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://monarchwatch.org/</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>The United States and Canada.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-109.14</westBoundingCoordinate>
+          <eastBoundingCoordinate>-68.28</eastBoundingCoordinate>
+          <northBoundingCoordinate>49.92</northBoundingCoordinate>
+          <southBoundingCoordinate>25.61</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <temporalCoverage>
+              <rangeOfDates>
+                  <beginDate>
+                    <calendarDate>1992-08-09</calendarDate>
+                  </beginDate>
+                <endDate>
+                  <calendarDate>1997-12-30</calendarDate>
+                </endDate>
+              </rangeOfDates>
+          </temporalCoverage>
+          <taxonomicCoverage>
+              <generalTaxonomicCoverage>Monarch (Danaus plexippus (Linnaeus, 1758)) butterflies.</generalTaxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>species</taxonRankName>
+                <taxonRankValue>Danaus plexippus</taxonRankValue>
+                  <commonName>Monarch butterfly</commonName>
+              </taxonomicClassification>
+          </taxonomicCoverage>
+  </coverage>
+  <purpose>
+    <para>Mission Statement: Monarch Watch strives to provide the public with information about the biology of monarch butterflies, their spectacular migration, and how to use monarchs to further science education in primary and secondary schools. We engage in research on monarch migration biology and monarch population dynamics to better understand how to conserve the monarch migration. We also promote protection of monarch habitats throughout North America.
+
+Vision Statement: In recognition of the rapid loss of habitats and resources needed by monarch butterflies in the United States, Canada, and Mexico, our vision is the preservation of the monarch migration will require stewardship by the governments and private citizens of all three countries. We all must work together to create, conserve, and protect monarch habitats. Sustaining monarch habitats will have the effect of protecting vital pollinators and other wildlife.</para>
+  </purpose>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Chip Orley R.</givenName>
+      <surName>Taylor, Jr.</surName>
+    </individualName>
+    <organizationName>Monarch Watch,  Kansas Biological Survey, University of Kansas</organizationName>
+    <positionName>Founder and Director; Professor</positionName>
+    <address>
+        <deliveryPoint>2021 Constant Ave</deliveryPoint>
+        <city>Lawrence</city>
+        <administrativeArea>Kansas</administrativeArea>
+        <postalCode>66047</postalCode>
+        <country>US</country>
+    </address>
+    <electronicMailAddress>chip@ku.edu</electronicMailAddress>
+    <onlineUrl>http://monarchwatch.org/</onlineUrl>
+      </contact>
+  <methods>
+        <methodStep>
+          <description>
+            <para>See Sampling Description.</para>
+          </description>
+        </methodStep>
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>Locations within the United States and Canada.</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para>Researchers and citizen scientists submit data associated with monarch tagging activities occurring at numerous locations throughout the eastern United States and Canada.</para>
+        </samplingDescription>
+      </sampling>
+      <qualityControl>
+        <description>
+          <para>Monarch Watch provides data sheets for controlled submission of data, discards data with incomplete information, and validates tag codes.</para>
+        </description>
+      </qualityControl>
+  </methods>
+  <project >
+    <title>Monarch Watch</title>
+      <personnel>
+        <individualName>
+            <givenName>Orley R. &quot;Chip&quot;</givenName>
+          <surName>Taylor, Jr.</surName>
+        </individualName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <funding>
+        <para>Funding for Monarch Watch is primarily provided through private contributions and the sale of promotional and educational items.</para>
+      </funding>
+  </project>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+          <dateStamp>2015-10-26T10:23:09.100-06:00</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+            <citation identifier="http://monarchwatch.org/">Monarch Watch, Kansas Biological Survey, University of Kansas, 2021 Constant Avenue, Lawrence, KS, 66047, U.S.A. (Accessed through Biodiversity Information Serving Our Nation (BISON), https://bison.usgs.gov, YYYY-MM-DD)</citation>
+          <resourceLogoUrl>https://bison.usgs.gov/ipt/logo.do?r=monarchwatch</resourceLogoUrl>
+          <dc:replaces>cf7d6c01-309b-4545-8319-3d53b1e8bfd0/v1.3.xml</dc:replaces>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
