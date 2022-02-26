@@ -36,14 +36,25 @@ let baseMaps = {
 };
 
 // 1. Add a 2nd layer group for the tectonic plate data.
-let tagged20009 = new L.LayerGroup();
-let adultFS20208 = new L.LayerGroup();
-let adultS20209= new L.LayerGroup();
-let eggsFS20208 = new L.LayerGroup();
-let larvaS20209 = new L.LayerGroup();
-let peakM20209 = new L.LayerGroup();
-let milkweedFS20207 = new L.LayerGroup();
-let milkweedS20207 = new L.LayerGroup();
+// let tagged20009 = new L.LayerGroup();
+// let adultFS20208 = new L.LayerGroup();
+// let adultS20209= new L.LayerGroup();
+// let eggsFS20208 = new L.LayerGroup();
+// let larvaS20209 = new L.LayerGroup();
+// let peakM20209 = new L.LayerGroup();
+// let milkweedFS20207 = new L.LayerGroup();
+// let milkweedS20207 = new L.LayerGroup();
+
+let tagged20009 = new L.markerClusterGroup();
+let adultFS20208 = new L.markerClusterGroup();
+let adultS20209= new L.markerClusterGroup();
+let eggsFS20208 = new L.markerClusterGroup();
+let larvaS20209 = new L.markerClusterGroup();
+let peakM20209 = new L.markerClusterGroup();
+let milkweedFS20207 = new L.markerClusterGroup();
+let milkweedS20207 = new L.markerClusterGroup();
+
+
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
@@ -52,7 +63,7 @@ let overlays = {
   "Monarch Adult Sightings September 2020": adultS20209,
   "Monarch Egg First Sightings August 2020": eggsFS20208,
   "Monarch Larva Sightings September 2020": larvaS20209,
-  "Monarch Peak Migration": peakM20209,
+  "Monarch Peak Migration September 2020": peakM20209,
   "Milkweed First Sightings July 2020": milkweedFS20207,
   "Milkweed Sightings July 2020": milkweedS20207
   
