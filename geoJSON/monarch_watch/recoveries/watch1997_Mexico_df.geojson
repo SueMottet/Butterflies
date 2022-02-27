@@ -4,12 +4,12 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 1997,
     "species": "Monarch Tag Recovered",
     "Location": "Cerro Pelon",
     "latitude": 19.025,
     "longitude": -100.142,
-    "number": 30
+    "number": 1
    },
    "geometry": {
     "type": "Point",
@@ -22,12 +22,12 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 1997,
     "species": "Monarch Tag Recovered",
     "Location": "El Rosario",
     "latitude": 30.0595,
     "longitude": -115.7257,
-    "number": 381
+    "number": 47
    },
    "geometry": {
     "type": "Point",
@@ -40,54 +40,18 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
-    "species": "Monarch Tag Recovered",
-    "Location": "Piedra Herrada",
-    "latitude": 21.216666666666665,
-    "longitude": -103.03133333333334,
-    "number": 3
-   },
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -103.03133333333334,
-     21.216666666666665
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "properties": {
-    "Report Season": 2012,
+    "Report Season": 1997,
     "species": "Monarch Tag Recovered",
     "Location": "Sierra Chincua",
     "latitude": 20.11766666666667,
     "longitude": -100.46366666666667,
-    "number": 13
+    "number": 1
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
      -100.46366666666667,
      20.11766666666667
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "properties": {
-    "Report Season": 2012,
-    "species": "Monarch Tag Recovered",
-    "Location": "Valle De Bravo",
-    "latitude": 19.19387,
-    "longitude": -100.13394,
-    "number": 4
-   },
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -100.13394,
-     19.19387
     ]
    }
   }

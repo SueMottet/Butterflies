@@ -4,12 +4,12 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 2004,
     "species": "Monarch Tag Recovered",
     "Location": "Cerro Pelon",
     "latitude": 19.025,
     "longitude": -100.142,
-    "number": 30
+    "number": 29
    },
    "geometry": {
     "type": "Point",
@@ -22,12 +22,12 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 2004,
     "species": "Monarch Tag Recovered",
     "Location": "El Rosario",
     "latitude": 30.0595,
     "longitude": -115.7257,
-    "number": 381
+    "number": 1718
    },
    "geometry": {
     "type": "Point",
@@ -40,12 +40,48 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 2004,
+    "species": "Monarch Tag Recovered",
+    "Location": "Las Palomas",
+    "latitude": 20.921944444444446,
+    "longitude": -100.74027777777778,
+    "number": 3
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.74027777777778,
+     20.921944444444446
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "Report Season": 2004,
+    "species": "Monarch Tag Recovered",
+    "Location": "Mil Cumbres",
+    "latitude": 19.6966,
+    "longitude": -101.1446,
+    "number": 1
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -101.1446,
+     19.6966
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "Report Season": 2004,
     "species": "Monarch Tag Recovered",
     "Location": "Piedra Herrada",
     "latitude": 21.216666666666665,
     "longitude": -103.03133333333334,
-    "number": 3
+    "number": 2
    },
    "geometry": {
     "type": "Point",
@@ -58,36 +94,36 @@
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 2004,
     "species": "Monarch Tag Recovered",
-    "Location": "Sierra Chincua",
-    "latitude": 20.11766666666667,
-    "longitude": -100.46366666666667,
-    "number": 13
+    "Location": "San Francisco Oxtotilpan",
+    "latitude": 19.2815,
+    "longitude": -100.50316666666667,
+    "number": 3
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -100.46366666666667,
-     20.11766666666667
+     -100.50316666666667,
+     19.2815
     ]
    }
   },
   {
    "type": "Feature",
    "properties": {
-    "Report Season": 2012,
+    "Report Season": 2004,
     "species": "Monarch Tag Recovered",
-    "Location": "Valle De Bravo",
-    "latitude": 19.19387,
-    "longitude": -100.13394,
-    "number": 4
+    "Location": "Sierra Chincua",
+    "latitude": 20.11766666666667,
+    "longitude": -100.46366666666667,
+    "number": 71
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -100.13394,
-     19.19387
+     -100.46366666666667,
+     20.11766666666667
     ]
    }
   }
