@@ -77,7 +77,7 @@ L.control.layers(baseMaps, overlays).addTo(map);
 
 
 // Retrieve the adult sightings GeoJSON data.
-adultFS20208data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Adult_First_Site/JNorth_Adult_First_Site_2020_8.geojson"
+adultFS20208data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Adult_First_Site/JNorth_Adult_First_Site_2020_8.geojson"
 d3.json(adultFS20208data).then(function(data) {
 
    // Creating a GeoJSON layer with the retrieved data.
@@ -100,7 +100,7 @@ d3.json(adultFS20208data).then(function(data) {
   adultFS20208.addTo(map);
 
   // 3. Retrieve the last eggSightings GeoJSON data
-  tagged20009data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/monarch_watch/tagged/MWatch_Tagged_2000_9.geojson"
+  tagged20009data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/monarch_watch/tagged/MWatch_Tagged_2000_9.geojson"
 
   d3.json(tagged20009data).then(function(data) {
 
