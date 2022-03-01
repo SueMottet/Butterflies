@@ -124,7 +124,7 @@ d3.json(adultFS20208data).then(function(data) {
   });
 
  // 3. Retrieve the last eggSightings GeoJSON data
- eggsFS20208data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Egg_First_Site/JNorth_Egg_First_Site_2020_8.geojson"
+ eggsFS20208data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Egg_First_Site/JNorth_Egg_First_Site_2020_9.geojson"
 
  d3.json(eggsFS20208data).then(function(data) {
 
@@ -151,7 +151,7 @@ d3.json(adultFS20208data).then(function(data) {
 
 
 // 3. Retrieve the last eggSightings GeoJSON data
-larvaS20209data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Larva_Site/JNorth_Larva_Site_2020_9.geojson"
+larvaS20209data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Larva_Site/JNorth_Larva_Site_2020_9.geojson"
 
 d3.json(larvaS20209data).then(function(data) {
 
@@ -165,7 +165,7 @@ L.geoJson(data, {
   },
   // style: styleInfo,
   onEachFeature: function(feature, layer) {
-    layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.number);
+    layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
   }
 }).addTo(larvaS20209);
 // 8. Add the major earthquakes layer to the map.
@@ -175,7 +175,7 @@ larvaS20209.addTo(map);
 
 
 // 3. Retrieve the major eggSightings GeoJSON data
-peakM20209data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Peak_Migration/JNorth_Peak_Migration_2020_9.geojson"
+peakM20209data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Peak_Migration/JNorth_Peak_Migration_2020_9.geojson"
 
 d3.json(peakM20209data).then(function(data) {
 
@@ -190,7 +190,7 @@ L.geoJson(data, {
   },
   // style: styleInfo,
   onEachFeature: function(feature, layer) {
-    layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.number);
+    layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
   }
 }).addTo(peakM20209);
 // 8. Add the major earthquakes layer to the map.
@@ -199,7 +199,7 @@ peakM20209.addTo(map);
 });
 
 
-  milkweedFS20207data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Milkweed_First_Site/JNorth_Milkweed_First_Site_2020_7.geojson"
+  milkweedFS20207data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Milkweed_First_Site/JNorth_Milkweed_First_Site_2020_7.geojson"
   d3.json(milkweedFS20207data).then(function(data) {
 
 
@@ -213,7 +213,7 @@ peakM20209.addTo(map);
       },
       // style: styleInfo,
       onEachFeature: function(feature, layer) {
-        layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.number);
+        layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
       }
     }).addTo(milkweedFS20207);
     // 8. Add the major earthquakes layer to the map.
@@ -235,7 +235,7 @@ peakM20209.addTo(map);
         },
         // style: styleInfo,
         onEachFeature: function(feature, layer) {
-          layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.number);
+          layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
         }
       }).addTo(milkweedS20207);
       // 8. Add the major earthquakes layer to the map.
