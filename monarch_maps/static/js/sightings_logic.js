@@ -45,6 +45,7 @@ let baseMaps = {
 // let milkweedFS20207 = new L.LayerGroup();
 // let milkweedS20207 = new L.LayerGroup();
 
+let recoveriesMex2020 = new L.markerClusterGroup();
 let tagged20009 = new L.markerClusterGroup();
 let adultFS20208 = new L.markerClusterGroup();
 let adultS20209= new L.markerClusterGroup();
@@ -59,6 +60,7 @@ let milkweedS20207 = new L.markerClusterGroup();
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
   "Monarch Tagged September 2000": tagged20009,
+  "Monarch Mexico Tag Recoveries 2000": recoveriesMex2020, 
   "Monarch Adult First Sightings August 2020": adultFS20208,
   "Monarch Adult Sightings September 2020": adultS20209,
   "Monarch Egg First Sightings August 2020": eggsFS20208,
@@ -72,9 +74,6 @@ let overlays = {
 // Then we add a control to the map that will allow the user to change which
 // layers are visible.
 L.control.layers(baseMaps, overlays).addTo(map);
-
-
-
 
 // Retrieve the adult sightings GeoJSON data.
 adultFS20208data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Adult_First_Site/JNorth_Adult_First_Site_2020_8.geojson"
@@ -92,12 +91,37 @@ d3.json(adultFS20208data).then(function(data) {
      // We create a popup for each circleMarker to display the magnitude and location of the earthquake
      //  after the marker has been created and styled.
      onEachFeature: function(feature, layer) {
-      layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.school);
+      layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
     }
   }).addTo(adultFS20208);
 
   // Then we add the first sigh layer to our map.
   adultFS20208.addTo(map);
+
+// Retrieve the mexico tag recoveries GeoJSON data.
+recoveriesMex2020data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/monarch_watch/recoveries/watch2020_Mexico_df.geojson"
+d3.json(recoveriesMex2020data).then(function(data) {
+
+   // Creating a GeoJSON layer with the retrieved data.
+  L.geoJson(data, {
+    	// We turn each feature into a marker on the map.
+    	pointToLayer: function(feature, latlng) {
+      		// console.log(data);
+      		return L.marker(latlng);
+        },
+      // We set the style for each circleMarker using our styleInfo function.
+    // style: styleInfo,
+     // We create a popup for each circleMarker to display the magnitude and location of the earthquake
+     //  after the marker has been created and styled.
+     onEachFeature: function(feature, layer) {
+      layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
+    }
+  }).addTo(recoveriesMex2020);
+
+  // Then we add the first sigh layer to our map.
+  recoveriesMex2020.addTo(map);
+});
+
 
   // 3. Retrieve the last eggSightings GeoJSON data
   tagged20009data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/monarch_watch/tagged/MWatch_Tagged_2000_9.geojson"
@@ -115,7 +139,7 @@ d3.json(adultFS20208data).then(function(data) {
     },
     // style: styleInfo,
     onEachFeature: function(feature, layer) {
-      layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.number);
+      layer.bindPopup("Number: " + feature.properties.number + "<br>Type: " + feature.properties.species);
     }
   }).addTo(tagged20009);
   // 8. Add the major earthquakes layer to the map.
@@ -124,7 +148,7 @@ d3.json(adultFS20208data).then(function(data) {
   });
 
  // 3. Retrieve the last eggSightings GeoJSON data
- eggsFS20208data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Egg_First_Site/JNorth_Egg_First_Site_2020_9.geojson"
+ eggsFS20208data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Egg_First_Site/JNorth_Egg_First_Site_2020_8.geojson"
 
  d3.json(eggsFS20208data).then(function(data) {
 
@@ -139,7 +163,7 @@ d3.json(adultFS20208data).then(function(data) {
    },
    // style: styleInfo,
    onEachFeature: function(feature, layer) {
-     layer.bindPopup("Number: " + feature.properties.number + "<br>Location: " + feature.properties.number);
+     layer.bindPopup("Number: " + feature.properties.number + "<br>Type " + feature.properties.species);
    }
  }).addTo(eggsFS20208);
  // 8. Add the major earthquakes layer to the map.
@@ -221,7 +245,7 @@ peakM20209.addTo(map);
     // 9. Close the braces and parentheses for the major earthquake data.
     });
  
-    milkweedS20207data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Milkweed_Site/JNorth_Milkweed_Site_2020_7.geojson"
+    milkweedS20207data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Milkweed_Site/JNorth_Milkweed_Site_2020_7.geojson"
     d3.json(milkweedS20207data).then(function(data) {
   
   
@@ -244,7 +268,7 @@ peakM20209.addTo(map);
       });
 
    // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
-   adultS20209data = "https://raw.githubusercontent.com/ChristianShada/Monarch_Butterflies/main/static_Sue/geoJSON/journey_north/JNorth_Adult_Site/JNorth_Adult_Site_2020_9.geojson"
+   adultS20209data = "https://raw.githubusercontent.com/SueMottet/Butterflies/main/geoJSON/journey_north/JNorth_Adult_Site/JNorth_Adult_Site_2020_9.geojson"
   d3.json(adultS20209data).then(function(data) {
     // console.log(data);
     L.geoJson(data, {
