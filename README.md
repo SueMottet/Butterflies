@@ -1,10 +1,5 @@
-# Monarch Butterfly Migrations
+# Monarch Butterfly Migrations -Data exploratory and preparation work for data analysis
 
-## Approach for Analysis
-
-Collecting and cleaning the data from CSVs, merging the datasets, then using pandas to fine tune our data. The data would then be processed with a regression model in Python to identify correlation between population counts and time of year. Then, extracting the processed data as a JSON, we can then load the data into JS Leaflet which will aid in a visual for our results. Lastly, we will use ML to project our future predictions. Our idea is to have a website to interact with our findings.
-
-### Data exploratory and preparation work for data analysis:
 
 1. Web research on monarch butterfly migrations and discovery work locating relevant monarch datasets publicly available on the web:
 
